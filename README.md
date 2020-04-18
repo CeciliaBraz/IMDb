@@ -10,6 +10,7 @@ Pontos principais de aprendizagem:
 - Vincular fontes de ícones(Fontawesome) 
 
 ### Modelo
- ![](https://github.com/CeciliaBraz/IMDb/blob/master/img/IMDB-Codenation.gif)
- 
+
 ![](https://github.com/CeciliaBraz/IMDb/blob/master/img/imdb-pronto.png)
+
+![](https://github.com/CeciliaBraz/IMDb/blob/master/img/IMDB-Codenation.gif)
