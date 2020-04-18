@@ -1,0 +1,397 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+/* Geral */
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+}
+
+/* Header Geral */
+
+.header{
+	margin: 0 auto;
+	width: 100%;
+	height: 90%;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	flex-direction: column;
+	background-image: url(../img/capa-madmax2.jpg);
+}	
+
+
+.header:after{
+	background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+	width: 100%;
+	height: 100%;
+	content: "";
+   left: 0;
+   position: absolute;
+   top: 0;
+   z-index: 0;
+}
+
+/* Header-Nav */
+
+.header-nav{
+	position: relative;
+	display: flex;
+	height: 100%;
+	padding:  20px;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	width: 960px;
+	margin: 0 auto;
+	z-index: 2;
+}
+
+.nav-menu ul{
+	list-style: none;
+	display: flex;
+}
+
+.nav-menu ul li{
+	padding: 0px 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #fff;
+}
+
+.nav-menu li:hover{
+	color: #e4bb23;
+}
+
+.nav-perfil{
+	display: flex;
+}
+
+.nav-perfil img{
+	border-radius: 100%;
+	overflow: hidden;
+	width: 45px;
+}
+
+.nav-perfil p{
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #fff;
+	padding: 0px 10px;
+}
+
+/* Header Filme-Principal */
+
+
+.filme-principal{
+	color: #fff;
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	width: 960px;
+	flex-direction: column;
+	z-index: 1;
+}
+
+.filme-titulo h1{
+	text-transform: uppercase;
+	font-size: 6.5em;
+	line-height: 1.2em;
+	font-weight: bold;
+	padding-top:150px;
+	margin-bottom: 0;
+}
+
+.filme-genero{
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.filme-genero ul{
+	list-style: none;
+	display: flex;
+	padding-left: 0;
+}
+
+.filme-genero li{
+	font-size: 1.3em;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 0 30px 0 0;
+}
+
+.filme-genero li:hover{
+	color: #e4bb23;
+}
+
+.filme-botao{
+	display: flex;
+   padding: 15px 35px;
+   color: #000;
+   font-size: 1.5em;
+   background-color: #e4bb23;
+   border-radius: 40px;
+   position: relative;
+   justify-content: space-between;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.filme-botao i{
+	font-size: 1.5em;
+}
+
+.filme-botao:hover {
+	background-color: #bc9a1d;
+}
+
+.filme-informacoes{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.3em;
+
+}
+
+.filme-informacoes-data{
+	color: #bc9a1d;
+}
+
+/* Catálogo Geral */
+
+.catalogo{
+	position: relative;
+	width: 100%;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+}
+
+/* Catálogo Menu */
+
+.catalogo-menu{
+	padding: 20px;
+	justify-content: center;
+	text-align: center;
+}
+
+.catalogo-menu-lista{
+	width: 960px;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	padding: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.catalogo-menu-lista ul{
+	justify-content: center;
+}
+
+
+.catalogo-menu-lista li{
+	display: inline;
+	padding: 0 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.catalogo-menu a{
+	text-decoration: none;
+	color: #e4bb23;
+}
+
+.catalogo-menu a:hover{
+	box-shadow: inset 0 -1px 0 #e4bb23;
+	padding: 0 0 25px 0; 
+}
+
+/* Catálolo de Filmes Geral */
+
+.catalogo-filmes{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.catalogo-filmes-lista{
+	width: 960px;
+	align-items: flex-start;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 20px 0;
+}
+
+/* Catalo de Cada Filme */
+
+.catalogo-filmes-lista{
+    flex-wrap: wrap;
+}
+
+.catalogo-filmes li{
+	background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 30px;
+   overflow: hidden;
+   width: 24%;
+}
+
+.catalogo-filmes-lista-poster{
+	margin: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.catalogo-filmes-lista-poster img{
+	width: 100%;
+	height: auto;
+}
+
+.catalogo-filmes-lista-poster-hover{
+	align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: center;
+   left: 0;
+   opacity: 0;
+   padding: 80px 20px;
+   position: absolute;
+   text-align: center;
+   top: 0;
+   transition: all 0.2s ease-in-out;
+   visibility: hidden;
+   width: 100%;
+}
+
+.catalogo-filmes-lista-poster-hover p{
+	font-size: 2em;
+	font-weight: bold;
+	color: #e4bb23;
+	text-transform: uppercase;
+}
+
+.catalogo-filmes-lista-poster-hover i{
+	font-size: 5em;
+	color: #fff;
+}
+
+.catalogo-filmes-lista-poster-hover i:hover{
+	color: #e4bb23;
+}
+
+.catalogo-filmes-lista-poster:hover .catalogo-filmes-lista-poster-hover {
+	opacity: 1;
+	visibility: visible;
+}
+
+.catalogo-filmes-lista-descricao{
+	text-align: left;
+	line-height: 12px;
+	padding: 0 10px;
+}
+
+.catalogo-filmes-lista-descricao p{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.catalogo-filmes-lista-descricao a{
+	text-decoration: none;
+	color: #e4bb23;
+	font-size: 1.2em;
+}
+
+.catalogo-filmes-lista-rodape{
+	font-size: 2em;
+	line-height: 10px;
+	padding: 0px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+}
+
+.catalogo-filmes-lista-rodape i{
+	color: #cccccc;
+	cursor: pointer;
+}
+
+.catalogo-filmes-lista-rodape i:hover{
+	color: #e74c3c;
+}
+
+/* Rodapé */
+
+footer{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	margin: 0 auto;
+	justify-content: center;
+	text-align: center;
+}
+
+.rodape{
+	width: 960px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.redes-sociais ul{
+	list-style: none;
+	display: flex;
+	font-size: 2.5em;
+}
+
+.redes-sociais a{
+	color: inherit;
+}
+
+.twitter{
+	padding: 0 20px;
+	color: #cccccc;
+}
+
+.twitter:hover{
+	color: #55acee;
+}
+
+.facebook{
+	padding: 0 20px;
+	color: #cccccc;
+}
+
+.facebook:hover{
+	color: #3b5998;
+}
+
+.instagram{
+	padding: 0 25px;
+	color: #cccccc;
+}
+
+.instagram:hover{
+	color: #e95950;
+}
